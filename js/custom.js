@@ -47,3 +47,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+var theYear = new Date().getFullYear();
+$('#current-year').html(theYear);
