@@ -1,6 +1,3 @@
-jQuery(function ($) {
-	"use strict";
-
 
     document.addEventListener('DOMContentLoaded', function () {
       let currentImageIndex = 0;
@@ -37,6 +34,9 @@ jQuery(function ($) {
 
     window.addEventListener('scroll', setActiveLink);
 });
+
+jQuery(function ($) {
+	"use strict";
 
 
 //  Get the ID (remove #)
