@@ -1,3 +1,6 @@
+jQuery(function ($) {
+	"use strict";
+
 
     document.addEventListener('DOMContentLoaded', function () {
       let currentImageIndex = 0;
@@ -50,3 +53,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 var theYear = new Date().getFullYear();
 $('#current-year').html(theYear);
+
+	
+});
