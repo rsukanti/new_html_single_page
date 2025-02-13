@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'euclid_circular_a_triallight';
+    src: url('../fonts/euclidcircularatrial-light-webfont.woff2') format('woff2'),
+        url('../fonts/euclidcircularatrial-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'euclid_circular_a_trialRg';
+    src: url('../fonts/euclidcircularatrial-regular-webfont.woff2') format('woff2'),
+        url('../fonts/euclidcircularatrial-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'euclid_circular_a_trialmedium';
+    src: url('../fonts/euclidcircularatrial-medium-webfont.woff2') format('woff2'),
+        url('../fonts/euclidcircularatrial-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'euclid_circular_a_trialSBd';
+    src: url('../fonts/euclidcircularatrial-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/euclidcircularatrial-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'euclid_circular_a_trialRg';
+    color: #000000;
+}
+section h2{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-family: 'euclid_circular_a_triallight';
+}
+section{
+    padding: 80px 0 100px;
+}
+
+/* Navigation */
+nav.navbar {
+    padding: 1rem 0;
+    background-color: #fff;
+    border-bottom: solid 1px #e9ecef;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding: 0 15px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #085981;
+}
+
+.navbar-nav a {
+    color: #000000;
+    font-family: 'euclid_circular_a_trialmedium';
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner .banner-image.active {
+    opacity: 1;
+}
+
+.banner .content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    /* Ensure content is on top */
+}
+
+.banner h1 {
+    font-family: 'euclid_circular_a_trialmedium';
+    color: #ced4da;
+    font-size: 60px
+}
+
+.banner p {
+    color: #ced4da;
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+.banner .btn {
+    border: none;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    background: #b19777;
+}
+
+.banner .btn:hover {
+    background-color: #30373e;
+    color: #ffffff
+}
+
+/*About Wrapper*/
+.about-wrapper {
+    padding: 80px 0;
+}
+
+.about-wrapper h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: 'euclid_circular_a_trialmedium';
+}
+
+.about-wrapper p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-right: 60px;
+}
+
+.image-center {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+/* Services Section */
+.services-sec {
+    background: #f4f4f4;
+}
+.services-sec-inn{
+    background: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s ease-in-out;
+    padding: 40px;
+}
+.services-sec-inn:hover{
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.22);
+    transition: all 0.2s ease-in-out;
+}
+.services-sec-inn h4{
+    margin-bottom: 20px;
+}
+.services-icon {
+    width: 80px;
+    height: 80px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    margin: 0 0 30px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.services-icon img {
+    width: 100%;
+    height: auto;
+}
+
+/* Our Works Section */
+.works-sec-inn{
+    text-align: center;
+}
+.works-sec-inn h5 {
+    background: #cccccc;
+    border-radius: 50%;
+    margin: 0 0 20px;
+    padding: 0 50px;
+    font-size: 60px;
+    color: #000000;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+.works-sec-inn h5:hover{
+    font-size: 90px;
+    transition: all 0.5s ease-in-out;
+}
+.works-sec-inn h6{
+    font-size: 24px;
+}
+.works-sec-arrow{
+    text-align: center;
+    padding-top: 95px;
+    position: relative;
+}
+.works-sec-arrow span{
+    font-size: 32px;
+}
+.works-sec-arrow:before {
+    border-top: dotted 3px #cccccc;
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    top: 83%;
+}
+
+/* Contact Section */
+.contact-sec{
+    border-top:solid 1px #cccccc;
+}
