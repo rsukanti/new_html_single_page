@@ -35,9 +35,6 @@
     window.addEventListener('scroll', setActiveLink);
 });
 
-jQuery(function ($) {
-	"use strict";
-
 
 //  Get the ID (remove #)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -54,5 +51,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 var theYear = new Date().getFullYear();
 $('#current-year').html(theYear);
 
-	
-});
