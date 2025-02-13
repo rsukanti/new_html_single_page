@@ -34,3 +34,16 @@
 
     window.addEventListener('scroll', setActiveLink);
 });
+
+
+//  Get the ID (remove #)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the ID (remove #)
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll
+        }
+    });
+});
